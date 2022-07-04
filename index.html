@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terrys portfolio site</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fornts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- <div class="logo">
+        <p>ETO</p>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav> -->
+
+
+       <nav>
+        <div class="logo">ETO</div>
+        <span class="menuBtn" onclick="openNav()">
+            &#9776
+        </span>
+        <div class="navLinks">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">My Work</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="sideNav" id="sideNav">
+        <a href="#" class="closeBtn" onclick="closeNav()">&#10006</a>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">My work</a>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>OKWARI EDA TERRY</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">FRONT-END DEVELOPER</p>
+      <img
+        src="images/image.png"
+        alt="a picture of Jane Smith smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services mb-3">ABOUT ME</h2>
+      <div class="services">
+        <div class="service">
+          <h3 class="mb-3">WEB DEVELOPER</h3>
+          <p>
+          Okwari Eda Terry is a talented and brilliant  Web developer,Entrepreneur and , <br>
+          someone that encourages success and the growth of any organization or place I find myself. 
+          I am social and welcomes everybody irrespective of their status and background. <br>
+          I have team management skills and loves diligence, integrity, and dedication in what so ever I do. 
+
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service mb-3">
+          <h3 class="mb-3">MY TECH STECK</h3>
+          <p>
+         My Tech Stacks are; Git and Github, Bootstrap, HTML, CSS, SCSS, Java Script, python for break beat code,<br>
+        Figma, and i can switch in between diffrent frame work at any time i need it, and i can take up new technologies in a very short time
+          </p>
+        </div>
+        <!-- / service -->
+
+       
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">MY PROJECT WORK</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        A WEB DEVELOPER 
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          My Tech Stacks are; GiT and Github, Bootstrap,  HTML, CSS, SCSS, Java Script, React, python for break beat code
+           , Figma, and i can switch in between diffrent frame work at any time i need it, <br> and i can take up new technologies in a very short time.
+        </p>
+        <p>
+         I also recently designed my portfolio website and a group Business website while learning at innkeeper. <br>
+          are a few technologies I have learnt and have been working with recently:
+        </p>
+
+        <img
+          src="images/tech stack.png"
+          alt="Jane leaning against a bus"
+          class="about-me__img"
+        />
+      </div>
+
+      <img
+        src="images/image.png"
+        alt="Jane leaning against a bus"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work mb-3">MY PROJECT WORK</h2>
+      <p class="section__subtitle section__subtitle--work mb-3">
+        A preview of my jobs
+    
+      </p>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+       
+         <div class="col">
+          <div class="card">
+            <a href="#" class="portfolio__item">
+              <img src="images/work1.png" alt="" class="portfolio__img" />
+            </a>
+
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-dark">
+               Home page for Swift Ride a transportation company, developered with: Bootstrap,  HTML, CSS, SCSS, Java Script, React.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <a href="#" class="portfolio__item">
+              <img src="images/work2.png" alt="" class="portfolio__img" />
+            </a>
+
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-dark">
+                Student Addission Form, developed with: HTML, CSS.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <a href="#" class="portfolio__item">
+              <img src="images/work3.png" alt="" class="portfolio__img" />
+            </a>
+
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-dark">
+                Google Maps for a website, developed with: React.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <a href="#" class="portfolio__item">
+              <img src="images/work4.png" alt="" class="portfolio__img" />
+            </a>
+
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-dark">
+                Figma Design for Swift Ride a transportation company.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <a href="#" class="portfolio__item">
+              <img src="images/work5.png" alt="" class="portfolio__img" />
+            </a>
+
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-dark">
+                Space Travel Website, developed with:   HTML, CSS, SCSS, Java Script.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <a href="#" class="portfolio__item">
+              <img src="images/work6.png" alt="" class="portfolio__img" />
+            </a>
+
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text text-dark">
+               Blackjack Game, developed with   HTML, CSS, Java Script.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    
+     <footer class="text-white text-center w-75 mx-auto mt-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 col-sm-12">
+          <h5 class="text-uppercase footericon"></h5>
+          <p class="pText text-dark">
+           My Tech Stacks are; GiT and Github, Bootstrap,  HTML, CSS, SCSS, Java Script, React, python for break beat code
+           , Figma, and i can switch in between diffrent frame work at any time i need it, <br> and i can take up new technologies in a very short time.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-sm-12">
+          <h5 class="text-uppercase footericon mb-3"></h5>
+          <div class="d-flex flex-column">
+            <a href="#" class="footertext mb-3">
+              What i Do
+            </a>
+            <a href="#" class="footertext mb-3">
+              About Me
+            </a>
+            <a href="#" class="footertext mb-3">
+              My project work
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="col-md-6 col-lg-4 col-sm-12
+         d-block"
+        >
+           <h5 class="text-uppercase footericon mb-3">CONTACT US</h5>
+          <div class="d-flex flex-column">
+            <a href="#" class="footertext mb-3">
+              
+
+              <div> 
+         <a href="" class="footer__link">okwarieda@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+
+             <a
+            class="social-list__link"
+            href="https://www.instagram.com/terrys_kitchen_/"
+          >
+            <i class="fab fa-instagram-square"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/lavender.terry.79"
+          >
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </li>
+
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/eda-okwari-344551127"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://twitter.com/Laviterry16?s=09">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/TerryEda">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
